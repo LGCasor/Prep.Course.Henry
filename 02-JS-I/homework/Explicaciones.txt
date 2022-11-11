@@ -1,0 +1,37 @@
+Explicaciones de los siguientes conceptos para niños:
+
+Variable: Una variable es un cajon que se utiliza para guardar cosas de todo tipo, desde numeros, letras, palabras, oraciones, etc, para luego poder usarlos cuando los necesitemos, como lo hacemos cuando buscamos un abrigo en nuestro ropero si queremos salir y afuera hace frio.
+Para crear estos cajones utilizamos una palabra especial llamada "var", seguida por un espacio, el nombre del cajon "ropero" y el simbolo "=" para asignarle o guardar las cosas en ese cajon, de este modo, por ejemplo, si necesitamos usar un "abrigo" sabemos que se encuentra en el cajon "ropero". 
+Ejemplo: var ropero = "abrigo"
+Y si luego llamamos a la variable que nombramos ropero nos devolvera la cosa "abrigo".
+
+Strings: Los strings es el nombre de un tipo de cosa que podemos guardar en los cajones, y en particular el string es el tipo que se refiere a letras, palabras, oraciones, etc, y como demostramos en el ejemplo anterior para hacerle saber al cajon que estamos guardando algo de tipo string, debemos poner la palabra entre comillas. Ejemplos: "buzo", "campera", "saco", "pullover", etc.
+
+Funciones: Las funciones son objetos llamados maquinas que se encargan de calcular, cambiar y hacer diferentes cosas con las variables. Para crear una funcion utilizamos la palabra especial "function", seguida por el nombre de la funcion "suma" que describe que es lo que va a hacer esta maquina, seguido por argumentos o entradas especiales en la maquina donde ponemos las cosas que queremos cambiar o tranformar entre parentesis y por ultimo corchetes donde van las instrucciones de como queremos que funcione dicha maquina para que nos devuelva lo que queremos a traves de la palabra especial "return". Por ejemplo, si queremos crear una maquina que nos sume 2 numeros para que nos de el resultado se escribiria de la siguiente forma: 
+
+	var numero1 = 1;
+	var numero2 = 2;
+
+	function sumar(numero1, numero2) {
+		numero1 + numero2 = numeroFinal
+		return numeroFinal
+	};
+
+Lo que acabmos de hacer es crear una maquina que sumara las variables numero1 y numero2 que nos devolvera el resultado de la misma. En lenguaje coloquial hemos creado dos cajones en los que guardamos numeros, luego creamos una maquina o funcion llamada sumar en el que pusimos los cajones que creamos para que transforme los cajones originales en un cajon nuevo llamado numeroFinal que contiene el numero 3, en otras palabras la suma de los contenidos de los cajones numero1(1) y numero2(2), y por ultimo para poder obtener el resultado final del cajon numeroFinal hemos agregado una palanca llamada return que nos devuelve el cajon nuevo creado por nuestra maquina. De este modo, es posible recrear(llamar) nuestra maquina(funcion) todas las veces que necesitemos sumar(nombre de la maquina) el contenido de 2 o mas cajones(variables) ingresando dichos cajones en las entradas de la maquina(argumentos) para que los tranforme en un cajon nuevo con el resultado que queremos y nos lo devuelva a traves de una palanca(return).
+
+Declaraciones if, valores booleanos: La palabra especial if se utiliza para controlar el funcionamiento de las maquinas previamente mencionadas a traves de comparaciones entre los contenidos de los cajones, tanto los cajones orignales que uno ingresa a la maquina como los cajones nuevos que se creen debido a la transformacion producida por nuestra maquina, con otra cosa o valor que sirva como filtro para decidir como quieres que funcione tu maquina y que cajon te devuelva al finalizar su operacion. Esta comparacion se basa en los valores booleanos verdadero o falso, que estan representados en la maquina con los nombres true y false respectivamente, una vez que se realiza una comparacion el resultado sera uno de los valores booleanos y segun como hayas armado la maquina esta comparacion puede cambiar, cancelar o incluso aprobar cierto funcionamiento en la misma. Por ejemplo, si queremos asegurarnos que el resultado que nuestra maquina anterior nos devuelva no se pase de 10, y que si se llegara de a pasar de 10 nos avise con un mensaje hariamos lo siguiente:
+
+ 	var numero1 = 5;
+	var numero2 = 4;
+
+	function sumar(numero1, numero2) {
+		numero1 + numero2 = numeroFinal
+		if (numeroFinal < 11) {
+		return numeroFinal
+		} else {
+		print "El resultado de la suma es mayor a 10!"
+		}
+	};
+
+Como podemos ver, los pasos necesarios para realizar la comparacion y controlar el funcionamiento de nuestra maquina son utilizar la palabra especial if seguido por parentesis donde pondremos los elementos que queremos comparar a traves de los operadores logicos menor que < , mayor que > , igual a == (no confundir con el igual que vimos durante variables ya que este solo se utiliza para realizar asignaciones), y sus combinaciones <= , >=  y !=, una vez armada la comparacion ahora abrimos llave y describimos que queremos que haga nuestra maquina en el caso de que la comparacion sea verdadera, en el ejemplo anterior una vez que la comparacion se resuelve en verdadero("true") la maquina nos retornara el resultado de la suma, cerramos llave y luego utilizamos la palabra especial else para indicarle a la maquina que queremos que haga en el caso de que el resultado de la comparacion sea falso("false"), que en el ejemplo anterior nos devolveria una oracion informandonos que el resultado es mayor a 10 por lo tanto no lo queremos. 
+En el ejemplo que vimos cada vez que usemos nuestra maquina siempre nos devolvera el resultado de la suma ya que la suma variables que utilizamos como argumento son igual 9, por lo tanto cada vez que nuestra maquina realize la comparacion nos dara verdadero retornando asi el resultado de la suma, sin embargo si cambiamos el valor de la variable numero 2 al numero 6, la suma nos dara como resultado 11 y al realizarse la comparacion vemos que numeroFinal < 11 es falso, y por ende la maquina ignorara las instrucciones en las llaves despues del if y utilizara las llaves despues del else que le indican mostrarnos la oracion El resultado de la suma es mayor a 10!.
