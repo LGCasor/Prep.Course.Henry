@@ -1,0 +1,39 @@
+For: La palabra especial for es utilizada para crear "bucles" o repetir ciertas acciones o instrucciones, a traves de evaluaciones entre expresiones hasta que se devuelva lo que queremos. Esto dependera de como armemos nuestro for, ya que este se escribe de una forma unica, empezando con usar la palabra for, seguido por parentesis donde primero necesitamos declarar una variable(cosa) sobre la que se repetira el bucle, seguido por una evaluacion de expresiones que se encargara de que el bucle se repita hasta que la evaluacion de como resultado false y por ultimo un contador, a traves del operador ++ encargado de cambiar el valor de la variable a su valor inicial mas uno, que incrementara el valor de la variable inicial para "contar" la cantidad de veces que se repetira nuestro bucle. Las tres declaraciones estaran divididas por un punto y coma. Luego de establecer los parametros de nuestro bucle, abriremos llaves para poner las instrucciones que queremos que se ejecuten cada vez que se repita el bucle. Ejemplo:
+
+    for (var i = 0 ;i < 100 ; i++) {
+        console.log(i);
+    }
+
+Operadores logicos: Como hemos explicado previamente tanto en el armado de las declaraciones if y los bucles for se utiliza la evaluacion de expresiones, sin embargo cuando necesitamos evaluar dos o mas expresiones en la misma estructura utilizamos operadores especiales llamados operadores logicos. El primer operador logico es "&&"(AND), que se encarga de evaluar que todas las comparaciones sean true(verdaderas) para que el resultado de la evaluacion final sea true, ya que con tan solo tener una sola comparacion que de false(falso) como resultado, la evaluacion final dara false como resultado ya que el operador &&(AND) requiere que todas las comparaciones resuelvan true para que toda la evaluacion de true. Ejemplo:
+
+    if (100 > 10 && 10 === 10) {
+        console.log("Ambas declaraciones son ciertas, este codigo se ejecutara");
+    }
+
+    if (10 === 9 && 10 > 9) {
+        console.log("Una de las declaraciones es false, por lo que && devolvera false, y este codigo no se ejecutara");
+    }
+
+El segundo operador logico es "||"(OR), este operador a diferencia del AND determinara si una de las expresiones es true, y con tal que una de las comparaciones sea true, el OR devolvera true sin importar si una es true y true, true y false o false y true. La unica situacion en la que la operacion OR resultara en false sera cuando todas las evaluaciones de las expresiones den falso. Ejemplo:
+
+    if (100 > 10 || 10 === 10) {
+        console.log("Ambas declaraciones son ciertas, este codigo se ejecutara");
+    }
+
+     if (10 === 9 || 10 > 9) {
+        console.log("Una de las declaraciones es true, por lo que || devolvera true y este codigo se ejecutara");
+    }
+
+    if (10 === 9 || 1 > 9) {
+        console.log("Ambas declaraciones son falsas, por lo que || devolvera false y este codigo no se ejecutara");
+    }
+
+El tercer operador logico es "!"(NOT), este operador a diferencia de los anteriores devolvera un valor opuesto al resultado de la comparacion. Ejemplo:
+
+    if(!false) {
+        console.log("El ! devolvera true, porque es lo contrario de false, asi que este codigo se ejecutara");
+    }
+
+    if(!(1 === 1)) {
+        console.log("1 es igual a 1, de modo que la expresion devuelve true. El operador ! devolvera lo contrario de eso, por lo que este codigo NO se ejecutara");
+    }
