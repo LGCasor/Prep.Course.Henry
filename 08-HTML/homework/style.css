@@ -1,8 +1,9 @@
+/*Aca empieza el bloque de estilo para homework.html */
 
 h1 {
     color: red;
 }
-img {
+.imgHW {
     width: 400px;
 }
 #thirdDiv {
@@ -17,5 +18,89 @@ img {
 #spanId {
     font-size: 18px;
     margin: 50px;
+}
+
+/*Aca empieza el bloque de estilo para cv.html */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0%;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.banner{
+    width: 100%;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+li{
+    font: bold;
+}
+
+.seccion p{
+    margin: 0 0 1em;
+}
+
+.seccion strong{
+    font-weight: bold;
+}
+
+.seccion em{
+    font-style: italic;
+}
+
+#foto-perfil{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
 }
 
