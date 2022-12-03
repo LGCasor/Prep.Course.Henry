@@ -10,6 +10,16 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  var objeto = {
+    A: 1,
+    B: 2,
+    C: 3
+  }
+  arrayNuevo = [];
+
+  for (var propiedad in objeto) {
+      var arrayNuevo = objeto[propiedad];
+    }
 }
 
 
